@@ -1,0 +1,458 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-14T17:41:19.008Z",
+  "prices": {
+    "NVDA": {
+      "price": "16076543559",
+      "updatedAt": 1794612983,
+      "stale": false,
+      "fetchedAt": 1794678079
+    },
+    "AAPL": {
+      "price": "35558500000",
+      "updatedAt": 1794603953,
+      "stale": false,
+      "fetchedAt": 1794678079
+    },
+    "TSLA": {
+      "price": "38779300000",
+      "updatedAt": 1794605549,
+      "stale": false,
+      "fetchedAt": 1794678079
+    },
+    "META": {
+      "price": "63854030616",
+      "updatedAt": 1794603904,
+      "stale": false,
+      "fetchedAt": 1794678079
+    },
+    "MSFT": {
+      "price": "52240500000",
+      "updatedAt": 1794603809,
+      "stale": false,
+      "fetchedAt": 1794678079
+    },
+    "GOOGL": {
+      "price": "29489116703",
+      "updatedAt": 1794584234,
+      "stale": false,
+      "fetchedAt": 1794678079
+    }
+  },
+  "history": {
+    "NVDA": [
+      {
+        "price": "16076543559",
+        "ts": 1794677983
+      },
+      {
+        "price": "16076543559",
+        "ts": 1794678079
+      }
+    ],
+    "AAPL": [
+      {
+        "price": "35558500000",
+        "ts": 1794677983
+      },
+      {
+        "price": "35558500000",
+        "ts": 1794678079
+      }
+    ],
+    "TSLA": [
+      {
+        "price": "38779300000",
+        "ts": 1794677983
+      },
+      {
+        "price": "38779300000",
+        "ts": 1794678079
+      }
+    ],
+    "META": [
+      {
+        "price": "63854030616",
+        "ts": 1794677983
+      },
+      {
+        "price": "63854030616",
+        "ts": 1794678079
+      }
+    ],
+    "MSFT": [
+      {
+        "price": "52240500000",
+        "ts": 1794677983
+      },
+      {
+        "price": "52240500000",
+        "ts": 1794678079
+      }
+    ],
+    "GOOGL": [
+      {
+        "price": "29489116703",
+        "ts": 1794677983
+      },
+      {
+        "price": "29489116703",
+        "ts": 1794678079
+      }
+    ]
+  },
+  "positions": {},
+  "decisions": [
+    {
+      "at": "2026-11-14T17:41:19.006Z",
+      "ticker": "GOOGL",
+      "action": "HOLD",
+      "rationale": "GOOGL market closed — feed holds last close $294.89; holding until open.",
+      "llmRationale": null,
+      "signals": {
+        "price": "$294.89",
+        "shortMa": null,
+        "longMa": null,
+        "momentumPct": null,
+        "meanRevPct": null,
+        "volatilityPct": null,
+        "observations": 2
+      }
+    },
+    {
+      "at": "2026-11-14T17:41:19.006Z",
+      "ticker": "MSFT",
+      "action": "HOLD",
+      "rationale": "MSFT market closed — feed holds last close $522.40; holding until open.",
+      "llmRationale": null,
+      "signals": {
+        "price": "$522.40",
+        "shortMa": null,
+        "longMa": null,
+        "momentumPct": null,
+        "meanRevPct": null,
+        "volatilityPct": null,
+        "observations": 2
+      }
+    },
+    {
+      "at": "2026-11-14T17:41:19.006Z",
+      "ticker": "META",
+      "action": "HOLD",
+      "rationale": "META market closed — feed holds last close $638.54; holding until open.",
+      "llmRationale": null,
+      "signals": {
+        "price": "$638.54",
+        "shortMa": null,
+        "longMa": null,
+        "momentumPct": null,
+        "meanRevPct": null,
+        "volatilityPct": null,
+        "observations": 2
+      }
+    },
+    {
+      "at": "2026-11-14T17:41:19.006Z",
+      "ticker": "TSLA",
+      "action": "HOLD",
+      "rationale": "TSLA market closed — feed holds last close $387.79; holding until open.",
+      "llmRationale": null,
+      "signals": {
+        "price": "$387.79",
+        "shortMa": null,
+        "longMa": null,
+        "momentumPct": null,
+        "meanRevPct": null,
+        "volatilityPct": null,
+        "observations": 2
+      }
+    },
+    {
+      "at": "2026-11-14T17:41:19.006Z",
+      "ticker": "AAPL",
+      "action": "HOLD",
+      "rationale": "AAPL market closed — feed holds last close $355.58; holding until open.",
+      "llmRationale": null,
+      "signals": {
+        "price": "$355.58",
+        "shortMa": null,
+        "longMa": null,
+        "momentumPct": null,
+        "meanRevPct": null,
+        "volatilityPct": null,
+        "observations": 2
+      }
+    },
+    {
+      "at": "2026-11-14T17:41:19.006Z",
+      "ticker": "NVDA",
+      "action": "HOLD",
+      "rationale": "NVDA market closed — feed holds last close $160.76; holding until open.",
+      "llmRationale": null,
+      "signals": {
+        "price": "$160.76",
+        "shortMa": null,
+        "longMa": null,
+        "momentumPct": null,
+        "meanRevPct": null,
+        "volatilityPct": null,
+        "observations": 2
+      }
+    },
+    {
+      "at": "2026-11-14T17:39:43.021Z",
+      "ticker": "GOOGL",
+      "action": "HOLD",
+      "rationale": "GOOGL market closed — feed holds last close $294.89; holding until open.",
+      "llmRationale": null,
+      "signals": {
+        "price": "$294.89",
+        "shortMa": null,
+        "longMa": null,
+        "momentumPct": null,
+        "meanRevPct": null,
+        "volatilityPct": null,
+        "observations": 1
+      }
+    },
+    {
+      "at": "2026-11-14T17:39:43.021Z",
+      "ticker": "MSFT",
+      "action": "HOLD",
+      "rationale": "MSFT market closed — feed holds last close $522.40; holding until open.",
+      "llmRationale": null,
+      "signals": {
+        "price": "$522.40",
+        "shortMa": null,
+        "longMa": null,
+        "momentumPct": null,
+        "meanRevPct": null,
+        "volatilityPct": null,
+        "observations": 1
+      }
+    },
+    {
+      "at": "2026-11-14T17:39:43.021Z",
+      "ticker": "META",
+      "action": "HOLD",
+      "rationale": "META market closed — feed holds last close $638.54; holding until open.",
+      "llmRationale": null,
+      "signals": {
+        "price": "$638.54",
+        "shortMa": null,
+        "longMa": null,
+        "momentumPct": null,
+        "meanRevPct": null,
+        "volatilityPct": null,
+        "observations": 1
+      }
+    },
+    {
+      "at": "2026-11-14T17:39:43.021Z",
+      "ticker": "TSLA",
+      "action": "HOLD",
+      "rationale": "TSLA market closed — feed holds last close $387.79; holding until open.",
+      "llmRationale": null,
+      "signals": {
+        "price": "$387.79",
+        "shortMa": null,
+        "longMa": null,
+        "momentumPct": null,
+        "meanRevPct": null,
+        "volatilityPct": null,
+        "observations": 1
+      }
+    },
+    {
+      "at": "2026-11-14T17:39:43.021Z",
+      "ticker": "AAPL",
+      "action": "HOLD",
+      "rationale": "AAPL market closed — feed holds last close $355.58; holding until open.",
+      "llmRationale": null,
+      "signals": {
+        "price": "$355.58",
+        "shortMa": null,
+        "longMa": null,
+        "momentumPct": null,
+        "meanRevPct": null,
+        "volatilityPct": null,
+        "observations": 1
+      }
+    },
+    {
+      "at": "2026-11-14T17:39:43.021Z",
+      "ticker": "NVDA",
+      "action": "HOLD",
+      "rationale": "NVDA market closed — feed holds last close $160.76; holding until open.",
+      "llmRationale": null,
+      "signals": {
+        "price": "$160.76",
+        "shortMa": null,
+        "longMa": null,
+        "momentumPct": null,
+        "meanRevPct": null,
+        "volatilityPct": null,
+        "observations": 1
+      }
+    }
+  ],
+  "dryRunTrades": [
+    {
+      "at": "2026-11-14T17:41:17.996Z",
+      "ticker": "GOOGL",
+      "action": "PUSH",
+      "mode": "dry-run",
+      "txHash": null,
+      "calldata": "0x0d8c4084000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000006ddb0361f000000000000000000000000000000000000000000000000000000006af72eaa0000000000000000000000000000000000000000000000000000000000000005474f4f474c000000000000000000000000000000000000000000000000000000",
+      "to": "0x0000000000000000000000000000000000000000",
+      "args": {
+        "price": "29489116703",
+        "updatedAt": "1794584234"
+      }
+    },
+    {
+      "at": "2026-11-14T17:41:17.996Z",
+      "ticker": "MSFT",
+      "action": "PUSH",
+      "mode": "dry-run",
+      "txHash": null,
+      "calldata": "0x0d8c408400000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000c29c6c520000000000000000000000000000000000000000000000000000000006af77b2100000000000000000000000000000000000000000000000000000000000000044d53465400000000000000000000000000000000000000000000000000000000",
+      "to": "0x0000000000000000000000000000000000000000",
+      "args": {
+        "price": "52240500000",
+        "updatedAt": "1794603809"
+      }
+    },
+    {
+      "at": "2026-11-14T17:41:17.996Z",
+      "ticker": "META",
+      "action": "PUSH",
+      "mode": "dry-run",
+      "txHash": null,
+      "calldata": "0x0d8c408400000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000eddff2f18000000000000000000000000000000000000000000000000000000006af77b8000000000000000000000000000000000000000000000000000000000000000044d45544100000000000000000000000000000000000000000000000000000000",
+      "to": "0x0000000000000000000000000000000000000000",
+      "args": {
+        "price": "63854030616",
+        "updatedAt": "1794603904"
+      }
+    },
+    {
+      "at": "2026-11-14T17:41:17.996Z",
+      "ticker": "TSLA",
+      "action": "PUSH",
+      "mode": "dry-run",
+      "txHash": null,
+      "calldata": "0x0d8c4084000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000009076d28a0000000000000000000000000000000000000000000000000000000006af781ed000000000000000000000000000000000000000000000000000000000000000454534c4100000000000000000000000000000000000000000000000000000000",
+      "to": "0x0000000000000000000000000000000000000000",
+      "args": {
+        "price": "38779300000",
+        "updatedAt": "1794605549"
+      }
+    },
+    {
+      "at": "2026-11-14T17:41:17.996Z",
+      "ticker": "AAPL",
+      "action": "PUSH",
+      "mode": "dry-run",
+      "txHash": null,
+      "calldata": "0x0d8c40840000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000000000000084773a6a0000000000000000000000000000000000000000000000000000000006af77bb100000000000000000000000000000000000000000000000000000000000000044141504c00000000000000000000000000000000000000000000000000000000",
+      "to": "0x0000000000000000000000000000000000000000",
+      "args": {
+        "price": "35558500000",
+        "updatedAt": "1794603953"
+      }
+    },
+    {
+      "at": "2026-11-14T17:41:17.996Z",
+      "ticker": "NVDA",
+      "action": "PUSH",
+      "mode": "dry-run",
+      "txHash": null,
+      "calldata": "0x0d8c4084000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000003be3c9647000000000000000000000000000000000000000000000000000000006af79ef700000000000000000000000000000000000000000000000000000000000000044e56444100000000000000000000000000000000000000000000000000000000",
+      "to": "0x0000000000000000000000000000000000000000",
+      "args": {
+        "price": "16076543559",
+        "updatedAt": "1794612983"
+      }
+    },
+    {
+      "at": "2026-11-14T17:39:41.661Z",
+      "ticker": "GOOGL",
+      "action": "PUSH",
+      "mode": "dry-run",
+      "txHash": null,
+      "calldata": "0x0d8c4084000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000006ddb0361f000000000000000000000000000000000000000000000000000000006af72eaa0000000000000000000000000000000000000000000000000000000000000005474f4f474c000000000000000000000000000000000000000000000000000000",
+      "to": "0x0000000000000000000000000000000000000000",
+      "args": {
+        "price": "29489116703",
+        "updatedAt": "1794584234"
+      }
+    },
+    {
+      "at": "2026-11-14T17:39:41.661Z",
+      "ticker": "MSFT",
+      "action": "PUSH",
+      "mode": "dry-run",
+      "txHash": null,
+      "calldata": "0x0d8c408400000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000c29c6c520000000000000000000000000000000000000000000000000000000006af77b2100000000000000000000000000000000000000000000000000000000000000044d53465400000000000000000000000000000000000000000000000000000000",
+      "to": "0x0000000000000000000000000000000000000000",
+      "args": {
+        "price": "52240500000",
+        "updatedAt": "1794603809"
+      }
+    },
+    {
+      "at": "2026-11-14T17:39:41.661Z",
+      "ticker": "META",
+      "action": "PUSH",
+      "mode": "dry-run",
+      "txHash": null,
+      "calldata": "0x0d8c408400000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000eddff2f18000000000000000000000000000000000000000000000000000000006af77b8000000000000000000000000000000000000000000000000000000000000000044d45544100000000000000000000000000000000000000000000000000000000",
+      "to": "0x0000000000000000000000000000000000000000",
+      "args": {
+        "price": "63854030616",
+        "updatedAt": "1794603904"
+      }
+    },
+    {
+      "at": "2026-11-14T17:39:41.661Z",
+      "ticker": "TSLA",
+      "action": "PUSH",
+      "mode": "dry-run",
+      "txHash": null,
+      "calldata": "0x0d8c4084000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000009076d28a0000000000000000000000000000000000000000000000000000000006af781ed000000000000000000000000000000000000000000000000000000000000000454534c4100000000000000000000000000000000000000000000000000000000",
+      "to": "0x0000000000000000000000000000000000000000",
+      "args": {
+        "price": "38779300000",
+        "updatedAt": "1794605549"
+      }
+    },
+    {
+      "at": "2026-11-14T17:39:41.661Z",
+      "ticker": "AAPL",
+      "action": "PUSH",
+      "mode": "dry-run",
+      "txHash": null,
+      "calldata": "0x0d8c40840000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000000000000084773a6a0000000000000000000000000000000000000000000000000000000006af77bb100000000000000000000000000000000000000000000000000000000000000044141504c00000000000000000000000000000000000000000000000000000000",
+      "to": "0x0000000000000000000000000000000000000000",
+      "args": {
+        "price": "35558500000",
+        "updatedAt": "1794603953"
+      }
+    },
+    {
+      "at": "2026-11-14T17:39:41.661Z",
+      "ticker": "NVDA",
+      "action": "PUSH",
+      "mode": "dry-run",
+      "txHash": null,
+      "calldata": "0x0d8c4084000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000003be3c9647000000000000000000000000000000000000000000000000000000006af79ef700000000000000000000000000000000000000000000000000000000000000044e56444100000000000000000000000000000000000000000000000000000000",
+      "to": "0x0000000000000000000000000000000000000000",
+      "args": {
+        "price": "16076543559",
+        "updatedAt": "1794612983"
+      }
+    }
+  ],
+  "liveTrades": []
+}
