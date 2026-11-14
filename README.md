@@ -41,4 +41,6 @@ of real shares; any ticker mimicry (synthetics are `TEST-` prefixed).
 
 ## Status
 
-Scaffold only (15 Nov 2026). No contracts deployed, no trades executed.
+- **Contracts (Days 3–5):** written, tested (`forge test` 47 pass; `base-forge` 49 pass incl. real B20 sim), committed locally. **Not deployed** — deployer wallet `0xDAa5726A8d3e71d6346fA5Ee8B28687d05DF76a3` has 0 ETH; funding in progress (see `contracts/DEPLOY.md`, `FAUCETS.md`).
+- **Agent (Days 6–8):** complete. Watcher reads real mainnet feeds (verified: NVDA $160.76, AAPL $355.58 Friday closes); strategist rules + Pollinations rationale; relayer + executor with dry-run calldata logging; scheduler (30 min market hours / 60 min off-hours); `npm test` 26/26 pass. Runs in **dry-run** until contract addresses are set in `agent/.env` — see `agent/README.md`.
+- **Frontend (Days 9–11):** not started. Dashboard reads `agent/state.json` + Sepolia events.

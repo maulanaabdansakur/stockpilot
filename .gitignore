@@ -9,5 +9,7 @@ cache/
 lib/
 # TypeScript build output
 dist/
+# Agent runtime state (prices, history, decisions) — dashboard reads it, never committed
+agent/state.json
 # OS / editor
 .DS_Store
