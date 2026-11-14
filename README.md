@@ -23,6 +23,11 @@ Deadline: submit by **5 Dec 2026**.
 | `RESEARCH.md` | Verified research: quest rules, B20, Chainlink feeds, faucets |
 | `contracts/` | Foundry project (Solidity) — `StockPilotVault`, `PaperMarket`, `TestOracle` |
 | `agent/` | Node.js/TypeScript agent (viem) — price watcher, strategist, executor, relayer |
+| `frontend/` | Next.js dashboard — live prices, agent portfolio, paper-portfolio onboarding |
+| `DEMO-VIDEO-SCRIPT.md` | 90 s demo video script (Scenes 3–4 placeholder until first live trade) |
+| `SUBMISSION-DRAFT.md` | Filled submission-form draft (TODOs: contract addresses, repo, X post link) |
+| `BUILD-IN-PUBLIC.md` | 3 X post drafts (2 postable now, 1 placeholder) |
+| `STATUS.md` | Milestone tracker + blockers + exact next commands after funding |
 | `agent-wallet.json` | **Gitignored.** Fresh throwaway test wallet for the agent/deployer (Base Sepolia only, chmod 600) |
 
 ## Build plan (see CONCEPT.md §5)
@@ -44,3 +49,6 @@ of real shares; any ticker mimicry (synthetics are `TEST-` prefixed).
 - **Contracts (Days 3–5):** written, tested (`forge test` 47 pass; `base-forge` 49 pass incl. real B20 sim), committed locally. **Not deployed** — deployer wallet `0xDAa5726A8d3e71d6346fA5Ee8B28687d05DF76a3` has 0 ETH; funding in progress (see `contracts/DEPLOY.md`, `FAUCETS.md`).
 - **Agent (Days 6–8):** complete. Watcher reads real mainnet feeds (verified: NVDA $160.76, AAPL $355.58 Friday closes); strategist rules + Pollinations rationale; relayer + executor with dry-run calldata logging; scheduler (30 min market hours / 60 min off-hours); `npm test` 26/26 pass. Runs in **dry-run** until contract addresses are set in `agent/.env` — see `agent/README.md`.
 - **Frontend (Days 9–11):** DONE 2026-11-15. Next.js 16 + plain CSS dashboard at **http://167.179.88.69:3001** (Vultr Docker `stockpilot`, port 3001; Revenant Reader :3000 + VeriBrief :80 untouched). Live Chainlink prices verified (NVDA $160.77, AAPL $355.58 Friday closes, market-closed-hold); agent panel reads `agent/state.json` snapshot; onboarding locked until contracts deploy. `npm run build` passes. Deploy: `frontend/deploy-vultr.sh`. See `frontend/README.md`.
+- **Polish (Days 12–13):** DONE 2026-11-15. Demo video script (90 s; Scenes 1/2/5 recordable now, Scenes 3/4 placeholder until deployment + first live trade), submission-form draft (TODOs: deployed addresses, repo URL, X post link), 3 build-in-public X drafts (2 postable now, 1 placeholder), milestone tracker. See `DEMO-VIDEO-SCRIPT.md`, `SUBMISSION-DRAFT.md`, `BUILD-IN-PUBLIC.md`, `STATUS.md`.
+- **Blockers:** (1) GitHub repo `github.com/maulanaabdansakur/stockpilot` does not exist yet — no remote; local commits ready to push. (2) Deployer wallet `0xDAa5726A8d3e71d6346fA5Ee8B28687d05DF76a3` has 0 ETH / 0 test USDC — funding via browser (see `FAUCETS.md`). Nothing deploys until funding clears; exact next commands in `STATUS.md`.
+- **Dec 1–4 (buffer + submit):** pending. User posts the X video + submits the official form (both reserved for the user).
