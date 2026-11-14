@@ -1,0 +1,13 @@
+# Dependencies
+node_modules/
+# Env / secrets — NEVER commit
+.env
+agent-wallet.json
+# Foundry build outputs
+out/
+cache/
+lib/
+# TypeScript build output
+dist/
+# OS / editor
+.DS_Store
