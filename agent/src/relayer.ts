@@ -30,6 +30,11 @@ export const TEST_ORACLE_ABI = [
     ],
     outputs: [],
   },
+  // Error entries so viem decodes reverts by name (StalePush = 0x011d3081).
+  { name: "StalePush", type: "error", inputs: [] },
+  { name: "NotRelayer", type: "error", inputs: [] },
+  { name: "InvalidPrice", type: "error", inputs: [] },
+  { name: "InvalidTimestamp", type: "error", inputs: [] },
 ] as const;
 
 export interface PushResult {
@@ -97,7 +102,8 @@ export async function pushPrices(
     } catch (err) {
       const msg = err instanceof Error ? err.message : String(err);
       // Weekend re-push of an unchanged close reverts StalePush — expected, not fatal.
-      if (/StalePush/.test(msg)) {
+      // Match by name (decoded, now that the ABI lists the errors) or by selector.
+      if (/StalePush|0x011d3081/.test(msg)) {
         console.log(`[relayer] pushPrice(${r.ticker}) skipped: price not newer than stored (StalePush).`);
         results.push({ ticker: r.ticker, price: r.price, updatedAt: r.updatedAt, mode: "live", calldata, to: oracleAddress, skipped: "StalePush" });
       } else {

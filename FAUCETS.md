@@ -44,7 +44,7 @@ Wallet is confirmed fresh and empty.
 ### 2b. Superchain console (console.optimism.io/faucet)
 - Page `GET` → **HTTP 200** (3,843-byte SPA shell; app JS at `/assets/index-CnONNpH0.js`).
 - JS confirms GitHub OAuth sign-in is required: strings `Link Github to use the faucet`, `github_oauth`, `GithubAuth`, `LoginWithOAuth`; faucet calls go through tRPC (`faucet.nextDrips.useQuery`). Copy: "Anyone can claim [amount] test ETH every 24 hours. For more tokens, verify your identity." / "Verify your onchain identity to get … test ETH every 24 hours. Superchain faucet supports 4 kinds of onchain identity."
-- **Verdict: CONFIRMED — needs GitHub OAuth sign-in in a browser. Not attempted (no login performed).** Research note: 0.01 ETH/day.
+- **OUTCOME 2026-11-15 12:45 (live browser): email sign-in + GitHub link both WORKED (maulanaabdansakur, 2FA completed by the user, Authorize clicked; 'Link Github' prompt gone; pujigustiana00 never used). BUT the faucet then demands a wallet connection: only a big red 'Connect wallet' button, all 14 network options (incl. Base Sepolia) disabled, NO address field, NO claim button. Claim is impossible without connecting a wallet — BLOCKED per the no-wallet-connect rule. 0 ETH claimed, nothing connected/signed. Tab left open, signed in, GitHub linked.**
 
 ### 2c. Coinbase CDP faucet (portal.cdp.coinbase.com/products/faucet)
 - `GET` → **HTTP 200** but redirected to the portal login: `https://portal.cdp.coinbase.com/?from=%2Fproducts%2Ffaucet`.
@@ -73,7 +73,7 @@ Two quick browser claims, no account creation needed for either:
 3. Paste destination address `0xDAa5726A8d3e71d6346fA5Ee8B28687d05DF76a3`.
 4. Submit — the Google reCAPTCHA runs in the browser. Claim should return a tx hash.
 
-If Chainlink fails in the browser, fallback for ETH is the Superchain console (https://console.optimism.io/faucet — needs GitHub sign-in) or the CDP faucet (https://portal.cdp.coinbase.com/products/faucet — needs a free CDP account; also drips test USDC 1 USDC/claim, up to 10/day).
+If Chainlink fails in the browser, fallback for ETH is the CDP faucet (https://portal.cdp.coinbase.com/products/faucet — needs a free CDP account; also drips test USDC 1 USDC/claim, up to 10/day). The Superchain console is BLOCKED 2026-11-15: it demands a wallet connection after the GitHub link, with no address field.
 
 Unverified alternative (secondary source only, not probed): thirdweb Base Sepolia faucet — up to 0.01 ETH/day, wallet connect, no mainnet-balance check.
 

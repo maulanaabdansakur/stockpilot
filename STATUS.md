@@ -1,9 +1,27 @@
 # StockPilot — status / milestone tracker
 
-**Updated:** Sun 2026-11-15 ~01:10 WIB (Days 12–13 polish).
+**Updated:** Sun 2026-11-15 ~13:40 WIB — **DEPLOYED LIVE ON BASE SEPOLIA.**
 **Deadline:** submit by 5 Dec 2026 (Quest period 5 Nov–5 Dec 2026).
 **Builder:** Maulana Abdan Sakur (solo, Bandung, Indonesia).
 **Track:** Agentic Stock Finance. **Testnet only — zero capital, no mainnet.**
+
+## 🚀 DEPLOYED — 2026-11-15 ~13:30 WIB (Base Sepolia, chain 84532)
+
+Funded by Abdan: 0.01 ETH claimed from the Superchain faucet himself (12:52 WIB),
+0.0095 ETH sent to the deployer (his wallet kept 0.0005 for gas).
+
+| Contract | Address |
+|---|---|
+| TestOracle | 0x6EeB136E317a4B0780d91072fdcB4939ac420496 |
+| StockPilotVault | 0x33D30CFADEe66bF56358eFE0bDFE1045dfb76042 |
+| PaperMarket | 0x0a7DCb33866023998c63A7a37661A3f88a0c188e |
+
+- Deploy gas 4,108,886 (~0.0000452 ETH); deployer balance after deploy 0.0094842 ETH.
+- All 6 instruments created live via `createInstrument` (all `0xb200…`): NVDA, AAPL, TSLA, META, MSFT, GOOGL. NVDA sanity checks pass (name "StockPilot Test NVDA", symbol "TEST-NVDA", decimals 18, supplyCap 1e9, MINT+BURN roles held by PaperMarket). Full addresses + txs: `contracts/DEPLOYED.md`.
+- Agent first LIVE cycle 13:32 WIB: 6 real Chainlink prices mirrored to TestOracle (NVDA $160.76, AAPL $355.58, TSLA $387.79, META $638.54, MSFT $522.40, GOOGL $294.89 — Friday closes); all HOLD (market closed Sunday); 0 trades. Loop running (`npm start`, next cycle ~25 min). Relayer fix: StalePush errors now decoded + logged as "skipped" instead of FAILED (ABI lacked the error entries).
+- **First paper trade 13:33 WIB: buy 10 test USDC → 0.0622024 TEST-NVDA at $160.7654**, tx 0xec6f82f6287746ac509646c3ebd9c28af9640d973023b74cc0363e658abdcf58 (block 59012959). Portfolio 1 funded with 10 test USDC; vault debited, TEST-NVDA minted, TradeExecuted emitted. (One false start: first buy attempt used `uint256` for maxPrice — the contract takes `int256`; corrected.)
+- Frontend redeployed with contract addresses: http://167.179.88.69:3001 (HTTP 200, live prices + market-closed-hold).
+- Deployer still holds 10 test USDC (20 − 10 deposited) + ~0.0094 ETH.
 
 ## Milestones
 
