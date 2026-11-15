@@ -123,3 +123,6 @@ hand the X post + form submission to the user (Dec 1–4 buffer).
 - `SUBMISSION-DRAFT.md` — filled form draft (TODOs marked)
 - `BUILD-IN-PUBLIC.md` — 3 X post drafts (2 postable, 1 placeholder)
 - `STATUS.md` — this tracker
+
+## Design — MALAM palette (2026-11-15 ~13:45 WIB)
+- User asked if the dashboard could look like the Winson Kho reel (2 base colors + 1 accent). Kai chose MALAM: black #0D0D0D + white, accent orange #FF6B35. Green/red kept only for trading semantics (up/buy vs down/sell). Restyled `frontend/src/app/globals.css` + `layout.tsx` bg + `pill-sky` → `pill-orange`. Redeployed to http://167.179.88.69:3001; served CSS verified (9× #FF6B35, 0× old navy/sky).

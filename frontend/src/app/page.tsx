@@ -84,7 +84,7 @@ function statusPill(status: string) {
     return <span className="pill pill-green">● Market open — live prices</span>;
   if (status === "market-open-stale")
     return <span className="pill pill-amber">● Market open — a feed is stale</span>;
-  return <span className="pill pill-sky">● Market closed / weekend hold — showing last close</span>;
+  return <span className="pill pill-orange">● Market closed / weekend hold — showing last close</span>;
 }
 
 /* ---------------- page ---------------- */
